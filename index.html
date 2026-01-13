@@ -52,6 +52,29 @@
 
     gtag('config', 'AW-17872099808');
   </script>
+  <!-- 문의 버튼 전환 함수 -->
+  <script>
+    function gtag_report_conversion(url, openNewTab=true) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          if (openNewTab) window.open(url, '_blank', 'noopener');
+          else window.location.href = url;
+        }
+      };
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17872099808/aahCCOvJq-IbEOCzispC',
+        'value': 1.0,
+        'currency': 'KRW',
+        'event_callback': callback
+      });
+
+      // 혹시 콜백이 늦을 때 대비 (안전장치)
+      setTimeout(callback, 800);
+
+      return false;
+    }
+  </script>
 </head>
 
 <body>
@@ -66,7 +89,8 @@
 
       <!-- TODO: 카카오 1:1 채팅 링크로 교체 -->
       <a class="kakao-top-btn" 
-        href="/thank-you.html" 
+        href="https://pf.kakao.com/_IseLb" 
+        onclick="return gtag_report_conversion(this.href, true);"
         target="_blank" 
         rel="noopener">
         <img src="./img/kakaofooter-icon.png" alt="카카오톡" />
@@ -330,10 +354,11 @@
           </div>
           <div class="cta-actions">
             <!-- TODO: 카카오 1:1 링크 -->
-            <a class="btn primary" href="/thank-you.html" target="_blank" rel="noopener">카카오톡 상담</a>
+            <a class="btn primary" href="https://pf.kakao.com/_IseLb" onclick="return gtag_report_conversion(this.href, true);" target="_blank" rel="noopener">카카오톡 상담</a>
             <!-- TODO: 텔레그램 링크 (필요 없으면 삭제) -->
             <a class="btn telegram-btn" 
               href="https://t.me/SNSmarketer" 
+              onclick="return gtag_report_conversion(this.href, true);"
               target="_blank" 
               rel="noopener">
               텔레그램 상담
@@ -369,6 +394,7 @@
         <!-- 텔레그램 -->
         <a class="fc-btn fc-tg" 
           href="https://t.me/SNSmarketer" 
+          onclick="return gtag_report_conversion(this.href, true);"
           target="_blank" 
           rel="noopener">
           <img src="./img/telegramfooter-icon.png" alt="텔레그램 문의">
@@ -377,7 +403,8 @@
 
         <!-- 카카오 -->
         <a class="fc-btn fc-kakao" 
-          href="/thank-you.html" 
+          href="https://pf.kakao.com/_IseLb" 
+          onclick="return gtag_report_conversion(this.href, true);"
           target="_blank" 
           rel="noopener">
           <img src="./img/kakaofooter-icon.png" alt="카카오톡 문의">
