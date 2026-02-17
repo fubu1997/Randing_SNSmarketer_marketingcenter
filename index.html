@@ -42,39 +42,6 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17872099808"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-17872099808');
-  </script>
-  <!-- 문의 버튼 전환 함수 -->
-  <script>
-    function gtag_report_conversion(url, openNewTab=true) {
-      var callback = function () {
-        if (typeof(url) !== 'undefined') {
-          if (openNewTab) window.open(url, '_blank', 'noopener');
-          else window.location.href = url;
-        }
-      };
-
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17872099808/aahCCOvJq-IbEOCzispC',
-        'value': 1.0,
-        'currency': 'KRW',
-        'event_callback': callback
-      });
-
-      // 혹시 콜백이 늦을 때 대비 (안전장치)
-      setTimeout(callback, 800);
-
-      return false;
-    }
-  </script>
 </head>
 
 <body>
@@ -89,8 +56,7 @@
 
       <!-- TODO: 카카오 1:1 채팅 링크로 교체 -->
       <a class="kakao-top-btn" 
-        href="https://pf.kakao.com/_IseLb" 
-        onclick="return gtag_report_conversion(this.href, true);"
+        href="https://pf.kakao.com/_vjnAX/chat" 
         target="_blank" 
         rel="noopener">
         <img src="./img/kakaofooter-icon.png" alt="카카오톡" />
@@ -106,79 +72,43 @@
         <div class="hero-grid">
           <!-- LEFT -->
           <div class="card hero-left">
-            <div class="kicker">SNS MARKETING SOLUTION</div>
+            <div class="kicker">SNS Marketer</div>
 
-            <h1><span class="hl-accent">SNS</span> 마케터<br/>효율적 관리 솔루션</h1>
+            <h1>
+              복잡한 SNS 운영,<br/>
+              <span class="hl-accent">셀프 마케팅</span> 편리하게!
+            </h1>
 
             <p class="sub">
-              SNS 채널 성장을 위한 전략과 운영을 지원합니다.
+              채널 상황에 맞춘 운영 방향과 실행 순서를 안내합니다.
             </p>
 
-            <div class="bullets">
-              <div class="bullet">
-                <div class="ico play">
-                  <svg viewBox="0 0 24 24">
-                    <polygon points="8,5 19,12 8,19"></polygon>
-                  </svg>
-                </div>
-                <div>
-                  <b>유튜브 채널 노출 관리 & 성장 지원</b>
-                  <span>콘텐츠 노출 흐름과 채널 성장 방향을 기반으로 운영을 지원합니다.</span>
-                </div>
-              </div>
-              <div class="bullet">
-                <div class="ico play">
-                  <svg viewBox="0 0 24 24">
-                    <polygon points="8,5 19,12 8,19"></polygon>
-                  </svg>
-                </div>
-                <div>
-                  <b>SNS 채널 트래픽 관리  </b>
-                  <span>유입 흐름을 안정적으로 유지하고 채널 활성도를 관리합니다.</span>
-                </div>
-              </div>
-              <div class="bullet">
-                <div class="ico play">
-                  <svg viewBox="0 0 24 24">
-                    <polygon points="8,5 19,12 8,19"></polygon>
-                  </svg>
-                </div>
-                <div>
-                  <b>마케팅 반응 데이터 기반 운영  </b>
-                  <span>채널 반응을 분석해 운영 방향을 조정합니다.</span>
-                </div>
-              </div>
-            </div>
-
             <div class="hero-actions">
-              <!-- TODO: 카카오 1:1 채팅 링크로 교체 -->
-
-              <button class="btn ghost" type="button" data-scroll="#services">
-                서비스 안내 보기
-              </button>
+              <!-- 핵심 CTA: 문의 -->
+              <a class="btn primary"
+                href="https://pf.kakao.com/_vjnAX/chat"
+                target="_blank"
+                rel="noopener">
+                지금 문의하기
+              </a>
             </div>
 
             <div class="note">
-              안내: 상황에 맞는 운영 방법을 먼저 안내해드립니다.
+              안내: 현재 상태를 먼저 확인하고, 필요한 항목만 제안합니다.
             </div>
           </div>
 
           <!-- RIGHT -->
           <div class="card hero-right">
             <div class="badge-row">
-              <div class="pill">전환율 중심 설계</div>
-              <div class="pill">광고 맞춤 랜딩</div>
-              <div class="pill">맞춤형 컨설팅</div>
+              <div class="pill">운영 방향 정리</div>
+              <div class="pill">유입 구조 설계</div>
+              <div class="pill">광고 운영 지원</div>
             </div>
 
-          <div class="visual" aria-label="브랜드 비주얼">
-            <div class="floating">YT</div>
-            <div class="floating">IG</div>
-            <div class="floating">TT</div>
-            <div class="floating">AD</div>
-
-            <img class="hero-illust" src="./img/heroImg.png" alt="SNS마케터 캐릭터" />
-          </div>
+            <div class="visual" aria-label="브랜드 비주얼">
+              <img class="hero-illust" src="./img/heroImg.png" alt="SNS마케터 캐릭터" />
+            </div>
           </div>
         </div>
       </section>
@@ -354,11 +284,10 @@
           </div>
           <div class="cta-actions">
             <!-- TODO: 카카오 1:1 링크 -->
-            <a class="btn primary" href="https://pf.kakao.com/_IseLb" onclick="return gtag_report_conversion(this.href, true);" target="_blank" rel="noopener">카카오톡 상담</a>
+            <a class="btn primary" href="https://pf.kakao.com/_vjnAX/chat" target="_blank" rel="noopener">카카오톡 상담</a>
             <!-- TODO: 텔레그램 링크 (필요 없으면 삭제) -->
             <a class="btn telegram-btn" 
               href="https://t.me/SNSmarketer" 
-              onclick="return gtag_report_conversion(this.href, true);"
               target="_blank" 
               rel="noopener">
               텔레그램 상담
@@ -394,7 +323,6 @@
         <!-- 텔레그램 -->
         <a class="fc-btn fc-tg" 
           href="https://t.me/SNSmarketer" 
-          onclick="return gtag_report_conversion(this.href, true);"
           target="_blank" 
           rel="noopener">
           <img src="./img/telegramfooter-icon.png" alt="텔레그램 문의">
@@ -403,8 +331,7 @@
 
         <!-- 카카오 -->
         <a class="fc-btn fc-kakao" 
-          href="https://pf.kakao.com/_IseLb" 
-          onclick="return gtag_report_conversion(this.href, true);"
+          href="https://pf.kakao.com/_vjnAX/chat" 
           target="_blank" 
           rel="noopener">
           <img src="./img/kakaofooter-icon.png" alt="카카오톡 문의">
